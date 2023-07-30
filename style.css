@@ -1,6 +1,6 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: peru;
+  background-color: #20b2aa;
 }
 
 h1 {
@@ -30,4 +30,15 @@ td {
 .code {
   font-family: monospace;
   background-color: beige;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+p {
+  text-align: center;
 }
