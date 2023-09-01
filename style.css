@@ -153,8 +153,21 @@ body {
 
 .midground {
   background-color: hsla(225, 100%, 25%, 0.4);
+  position: relative;
+  animation: mymove 5s infinite;
 }
 
 .foreground {
   background-color: hsla(325, 50%, 50%, 0.6);
+  position: relative;
+  animation: mymove 5s infinite;
+}
+
+.breadcrumb li a::before,
+.breadcrumb li a::after {
+  content: "";
+  position: absolute;
+  border-color: darkcyan;
+  border-style: solid;
+  border-width: 15px 5px;
 }
