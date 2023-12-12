@@ -167,6 +167,9 @@ body {
   animation: mymove 5s infinite;
 }
 
+/*BREADCRUMB MASTER*/
+
+/*this section puts breadcrumbs in a horizonal line*/
 .breadcrumb {
   text-align: center;
 }
@@ -177,6 +180,8 @@ body {
 .breadcrumb li {
   display: inline;
 }
+
+/*this section puts breadcrumbs in colored boxes*/
 
 .breadcrumb a {
   float: left;
@@ -191,6 +196,8 @@ body {
   padding: 0 5px;
 }
 
+/*this section makes the box color overlap the text from the left side*/
+
 .breadcrumb a::before,
 .breadcrumb a::after {
   content: "";
@@ -200,10 +207,14 @@ body {
   border-width: 15px 5px;
 }
 
+/*this section makes the left side of the box transparent giving the effect of an arrow pointing right*/
+
 .breadcrumb a::before {
   left: -10px;
   border-left-color: transparent;
 }
+
+/*this section creates the illusion of space between in the shape of triangles or arrows pointing to the right in the boxes through transparency*/
 
 .breadcrumb a::after {
   left: 100%;
@@ -215,6 +226,8 @@ body {
   border-left-color: darkcyan;
 }
 
+/*this section makes the boxes turn a different color on hover*/
+
 .breadcrumb a:hover {
   background-color: blue;
 }
@@ -225,6 +238,8 @@ body {
 .breadcrumb a:hover::after {
   border-left-color: blue;
 }
+
+/* not sure what this section does */
 
 .breadcrumb li a::before {
   left: -10px;
