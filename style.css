@@ -1,270 +1,300 @@
-/*colors*/
-/* cool blue: #2d5dcc */
-/* pink: rgb(252, 3, 169) */
-/* mint green: #4fe0b0 */
-
-/*PAGE STYLING MASTER*/
-
-/*fonts*/
-
-/*text styles*/
-
-/*this section changes the page's background color*/
-
 body {
-  font-family: Arial, sans-serif;
-  background-color: rgba(0, 255, 0, 0.1);
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #f8f8f8;
 }
 
-/*this styles paragraphs*/
-
-p {
-  text-align: center;
-}
-
-/*this section styles links and their behvior*/
-
-a:hover {
-  color: orange;
-}
-
-a:hover {
-  text-decoration: none;
-}
-
-a:visited {
-  color: none;
-}
-
-a:active {
-  color: yellow;
-}
-
-/*HEADER MASTER*/
-
-/*header1*/
-h1 {
-  text-align: center;
-  color: rgb(252, 3, 169);
-}
-
-/*header2*/
-h2 {
-  text-align: center;
-  color: #4fe0b0;
-}
-
-/*BREADCRUMB MASTER*/
-
-/*this section puts breadcrumbs in a horizonal line*/
-.breadcrumb {
-  text-align: center;
-}
-
-.breadcrumb li {
-  display: inline;
-}
-
-/*this section puts breadcrumbs in colored boxes*/
-
-.breadcrumb a {
-  float: left;
-  color: #fff;
-  background: #2d5dcc;
-  text-decoration: none;
-  position: relative;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  margin-right: 15px;
-  padding: 0 5px;
-}
-
-/*this section makes the box color overlap the text from the left side*/
-
-.breadcrumb a::before,
-.breadcrumb a::after {
-  content: "";
-  position: absolute;
-  border-color: #2d5dcc;
-  border-style: solid;
-  border-width: 15px 5px;
-}
-
-/*this section makes the left side of the box transparent giving the effect of an arrow pointing right*/
-
-.breadcrumb a::before {
-  left: -10px;
-  border-left-color: transparent;
-}
-
-/*this section creates the illusion of space between in the shape of triangles or arrows pointing to the right in the boxes through transparency*/
-
-.breadcrumb a::after {
-  left: 100%;
-  border-color: transparent;
-  border-left-color: #2d5dcc;
-}
-
-/*this section makes the boxes turn a different color on hover*/
-
-.breadcrumb a:hover {
-  background-color: blue;
-}
-.breadcrumb a:hover::before {
-  border-color: blue;
-  border-left-color: transparent;
-}
-.breadcrumb a:hover::after {
-  border-left-color: blue;
-}
-
-/* not sure what this section does */
-
-.breadcrumb li a::before {
-  left: -10px;
-  border-left-color: transparent;
-}
-
-/*BUTTON MASTER*/
-
-/*this section creates a gray button with no styling, just text*/
-
-button {
-  padding: 5px;
-  border: 1px solid black;
-  border-radius: 5px;
-  text-decoration: none;
-  box-shadow: 0px 5px;
-  text-align: center;
-  margin: auto;
-  display: flex;
-}
-
-/*this section changest the curssor when hovering over the button (a little hand icon)*/
-
-button:hover {
-  cursor: pointer;
-}
-
-button:active {
-  margin-top: 5px;
-  color: black;
-  box-shadow: 0px 0px;
-}
-
-/*this section styles the regular button and sets its behavior*/
-
-button {
-  height: 50px;
-  width: 200px;
-  cursor: pointer;
-  font-weight: 600;
-  font-size: 15px;
-}
-
-/*this section styles the 3-D button and sets its behavior when hovering and clicking it*/
-
-.skeuomorphic {
-  border: 2px solid #0c960c;
-  border-radius: 5px;
-  color: #f8f8f8;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2),
-    0px -2px 2px rgba(255, 255, 255, 0.5) inset,
-    0 2px 2px rgba(255, 255, 255, 0.8) inset;
-  background: linear-gradient(#1d1, #0ebc0e);
-  text-shadow: 0 -2px #0c960c;
-}
-
-.skeuomorphic:hover {
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1),
-    0px -2px 2px rgba(255, 255, 255, 0.25) inset,
-    0 2px 2px rgba(255, 255, 255, 0.4) inset;
-  background: #0ebc0e;
-  background: linear-gradient(#0ebc0e, #0c960c);
-  border-color: #064f06;
-}
-
-.skeuomorphic:active {
-  margin-top: 2px;
-  margin-bottom: -2px;
-  box-shadow: 0px 2px 2px rgba(63, 63, 63, 0.1),
-    0px -2px 2px rgba(255, 255, 255, 0.25) inset,
-    0 2px 2px rgba(255, 255, 255, 0.4) inset;
-  background: #0c960c;
-  background: linear-gradient(#0c960c, #0ebc0e);
-}
-
-/*this section styles the flat button that is a bit more madern than a regular button and sets its behavior when hovering and clicking it*/
-
-.flat {
-  background-color: #1d1;
-  color: #fff;
-  border: 2px solid #12dd23;
-  border-radius: 10px;
-}
-
-.flat:hover {
-  background-color: #0c960c;
-  transition: background-color 0.15s, font-size 0.15s;
-  font-size: 18px;
-}
-
-.flat:active {
-  border-color: #fff;
-}
-
-/*TABLE MASTER*/
-
-/*this section styles tables*/
-
-table {
-  border: 2px solid darkorchid;
-  width: 650px;
-  margin: 0 auto;
-}
-
-thead {
-  background-color: plum;
-  padding: 20px;
-}
-
-td {
-  border-top: 1px solid darkorchid;
-  text-align: center;
-  padding: 20px;
-}
-
-/*IMAGE MASTER*/
-
-/*this section styles images, in this case the ice cream gif*/
-
-.gif {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-
-/*CONTAINTER - DIV - MASTER*/
-
-/*this section containers*/
-
-.wrapper {
-  position: relative;
-  margin: auto;
-  padding: 0;
-  max-width: 75vw;
-}
-
-.midground,
-.foreground {
-  position: absolute;
+header {
+  position: fixed;
   top: 0;
-  left: 0;
+  z-index: 2;
+  height: 80px;
+  border-bottom: 1px solid black;
+  width: 100%;
+  background-color: #929292;
+  color: #f8f8f8;
+}
+
+header h1 {
+  margin: auto;
+  padding: 20px 20px;
   display: inline-block;
-  margin: 15vh 0 0 15vw;
-  padding: 0;
-  width: 35vw;
-  height: 59vh;
+}
+
+header ul {
+  margin: auto;
+  padding: 25px 20px;
+  display: inline-block;
+}
+
+header li {
+  font-size: 1.5em;
+  display: inline-block;
+  margin: 0px 50px;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    font-size: 15px;
+  }
+
+  header li {
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 0px 10px;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  header {
+    font-size: 12px;
+  }
+
+  header li {
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 5px 10px;
+  }
+
+  header h1,
+  header ul {
+    margin: auto;
+    padding: 5px;
+    display: inline-block;
+  }
+}
+
+nav {
+  float: right;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f8f8f8;
+}
+
+.flexbox-center {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.flexbox-left {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: left;
+}
+
+.colorbox {
+  margin: 20px;
+  min-height: 100px;
+  width: 20%;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.fontbox {
+  padding-left: 7px;
+  margin: 20px 20px 20px 20px;
+  min-height: 100px;
+  min-width: 20%;
+  background-color: white;
+  font-size: 17px;
+  border-left: 2px solid black;
+}
+
+#cool-blue {
+  background-color: #2d5dcc;
+  color: #fff;
+}
+
+#pink {
+  background-color: #d957d9;
+  color: #000;
+}
+
+#mint-green {
+  background-color: #4fe0b0;
+}
+
+#beige {
+  background-color: #efd9ca;
+}
+
+#wsw-blue {
+  background-color: #003d77;
+  color: #fff;
+}
+
+#redf {
+  background-color: #da072c;
+  color: #fff;
+}
+
+#candy {
+  background-color: #ff0800;
+}
+
+#purpur {
+  background-color: #9648ab;
+}
+
+#colors {
+  margin: 95px auto 50px auto;
+  width: 90%;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.section {
+  margin: 50px auto 50px auto;
+  width: 90%;
+  border: 1px solid black;
+  background-color: white;
+}
+
+.title {
+  width: 100%;
+  border-bottom: 1px dotted black;
+  padding: 20px 0px;
+  margin: 0px;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.anchor {
+  position: relative;
+  left: 0px;
+  top: -80px;
+}
+
+.font-label {
+  font-size: 1.5rem;
+}
+
+.regular {
+  font-style: normal;
+}
+
+.italic {
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.nunito-sans {
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+}
+
+.tomorrow {
+  font-family: "Tomorrow", sans-serif;
+}
+
+.times {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.franklin {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.text-panel h1 {
+  font-weight: 700;
+  font-size: 32px;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.text-panel h2 {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+}
+
+.text-panel p {
+  font-weight: 400;
+  font-size: 14px;
+  font-family: "Times-New-Roman", sans-serif;
+}
+
+.text-container {
+  margin-left: 50px;
+}
+
+.text-panel {
+  margin: 20px;
+}
+
+.border {
+  padding: 20px;
+  border: 2px solid #008cba;
+  border-radius: 3px;
+}
+
+.text-color {
+  color: #008cba;
+}
+
+.hover:hover {
+  background-color: #008cba;
+  color: white !important;
+}
+
+.button {
+  margin: 60px 30px;
+}
+
+.no-deco {
+  text-decoration: none;
+}
+
+.no-visited:visited {
+  color: #008cba;
+}
+
+.red {
+  background-color: #f44336;
+  color: white !important;
+  border: 2px solid black;
+  padding: 20px;
+  border-radius: 3px;
+}
+
+.round {
+  border-radius: 100%;
+}
+
+.transition {
+  transition-duration: 0.4s;
+}
+
+.shadow:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.opacity {
+  background-color: #008cba;
+  padding: 20px;
+  border: 2px solid #008cba;
+  border-radius: 3px;
+  opacity: 0.6;
+  color: white;
+  text-align: center;
+  font-size: 16px;
+}
+
+.opacity:hover {
+  opacity: 1;
 }
