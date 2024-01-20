@@ -1,16 +1,28 @@
-h1 {
-  text-align: center;
-  color: #20b2aa;
+/*colors*/
+/* cool blue: #2d5dcc */
+/* pink: rgb(252, 3, 169) */
+/* mint green: #4fe0b0 */
+
+/*PAGE STYLING MASTER*/
+
+/*fonts*/
+
+/*text styles*/
+
+/*this section changes the page's background color*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgba(0, 255, 0, 0.1);
 }
 
-h2 {
-  color: rebeccapurple;
-  text-align: center;
-}
+/*this styles paragraphs*/
 
 p {
   text-align: center;
 }
+
+/*this section styles links and their behvior*/
 
 a:hover {
   color: orange;
@@ -28,19 +40,95 @@ a:active {
   color: yellow;
 }
 
-table {
-  border: 2px solid darkorchid;
-  width: 650px;
-  margin: 0 auto;
+/*HEADER MASTER*/
+
+/*header1*/
+h1 {
+  text-align: center;
+  color: rgb(252, 3, 169);
 }
 
-thead {
-  background-color: plum;
+/*header2*/
+h2 {
+  text-align: center;
+  color: #4fe0b0;
 }
 
-td {
-  border-top: 1px solid darkorchid;
+/*BREADCRUMB MASTER*/
+
+/*this section puts breadcrumbs in a horizonal line*/
+.breadcrumb {
+  text-align: center;
 }
+
+.breadcrumb li {
+  display: inline;
+}
+
+/*this section puts breadcrumbs in colored boxes*/
+
+.breadcrumb a {
+  float: left;
+  color: #fff;
+  background: #2d5dcc;
+  text-decoration: none;
+  position: relative;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  margin-right: 15px;
+  padding: 0 5px;
+}
+
+/*this section makes the box color overlap the text from the left side*/
+
+.breadcrumb a::before,
+.breadcrumb a::after {
+  content: "";
+  position: absolute;
+  border-color: #2d5dcc;
+  border-style: solid;
+  border-width: 15px 5px;
+}
+
+/*this section makes the left side of the box transparent giving the effect of an arrow pointing right*/
+
+.breadcrumb a::before {
+  left: -10px;
+  border-left-color: transparent;
+}
+
+/*this section creates the illusion of space between in the shape of triangles or arrows pointing to the right in the boxes through transparency*/
+
+.breadcrumb a::after {
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #2d5dcc;
+}
+
+/*this section makes the boxes turn a different color on hover*/
+
+.breadcrumb a:hover {
+  background-color: blue;
+}
+.breadcrumb a:hover::before {
+  border-color: blue;
+  border-left-color: transparent;
+}
+.breadcrumb a:hover::after {
+  border-left-color: blue;
+}
+
+/* not sure what this section does */
+
+.breadcrumb li a::before {
+  left: -10px;
+  border-left-color: transparent;
+}
+
+/*BUTTON MASTER*/
+
+/*this section creates a gray button with no styling, just text*/
 
 button {
   padding: 5px;
@@ -51,8 +139,9 @@ button {
   text-align: center;
   margin: auto;
   display: flex;
-  display: grid;
 }
+
+/*this section changest the curssor when hovering over the button (a little hand icon)*/
 
 button:hover {
   cursor: pointer;
@@ -64,6 +153,8 @@ button:active {
   box-shadow: 0px 0px;
 }
 
+/*this section styles the regular button and sets its behavior*/
+
 button {
   height: 50px;
   width: 200px;
@@ -71,6 +162,8 @@ button {
   font-weight: 600;
   font-size: 15px;
 }
+
+/*this section styles the 3-D button and sets its behavior when hovering and clicking it*/
 
 .skeuomorphic {
   border: 2px solid #0c960c;
@@ -102,6 +195,8 @@ button {
   background: linear-gradient(#0c960c, #0ebc0e);
 }
 
+/*this section styles the flat button that is a bit more madern than a regular button and sets its behavior when hovering and clicking it*/
+
 .flat {
   background-color: #1d1;
   color: #fff;
@@ -119,17 +214,41 @@ button {
   border-color: #fff;
 }
 
-.code {
-  font-family: monospace;
-  background-color: beige;
+/*TABLE MASTER*/
+
+/*this section styles tables*/
+
+table {
+  border: 2px solid darkorchid;
+  width: 650px;
+  margin: 0 auto;
 }
 
-.container {
+thead {
+  background-color: plum;
+  padding: 20px;
+}
+
+td {
+  border-top: 1px solid darkorchid;
+  text-align: center;
+  padding: 20px;
+}
+
+/*IMAGE MASTER*/
+
+/*this section styles images, in this case the ice cream gif*/
+
+.gif {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
 }
+
+/*CONTAINTER - DIV - MASTER*/
+
+/*this section containers*/
 
 .wrapper {
   position: relative;
@@ -148,100 +267,4 @@ button {
   padding: 0;
   width: 35vw;
   height: 59vh;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  background-color: rgba(0, 255, 0, 0.1);
-}
-
-.midground {
-  background-color: hsla(225, 100%, 25%, 0.4);
-  position: relative;
-  animation: mymove 5s infinite;
-}
-
-.foreground {
-  background-color: hsla(325, 50%, 50%, 0.6);
-  position: relative;
-  animation: mymove 5s infinite;
-}
-
-/*BREADCRUMB MASTER*/
-
-/*this section puts breadcrumbs in a horizonal line*/
-.breadcrumb {
-  text-align: center;
-}
-
-.breadcrumb li {
-  float: center;
-}
-.breadcrumb li {
-  display: inline;
-}
-
-/*this section puts breadcrumbs in colored boxes*/
-
-.breadcrumb a {
-  float: left;
-  color: #fff;
-  background: darkcyan;
-  text-decoration: none;
-  position: relative;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  margin-right: 15px;
-  padding: 0 5px;
-}
-
-/*this section makes the box color overlap the text from the left side*/
-
-.breadcrumb a::before,
-.breadcrumb a::after {
-  content: "";
-  position: absolute;
-  border-color: darkcyan;
-  border-style: solid;
-  border-width: 15px 5px;
-}
-
-/*this section makes the left side of the box transparent giving the effect of an arrow pointing right*/
-
-.breadcrumb a::before {
-  left: -10px;
-  border-left-color: transparent;
-}
-
-/*this section creates the illusion of space between in the shape of triangles or arrows pointing to the right in the boxes through transparency*/
-
-.breadcrumb a::after {
-  left: 100%;
-}
-
-.breadcrumb a::after {
-  left: 100%;
-  border-color: transparent;
-  border-left-color: darkcyan;
-}
-
-/*this section makes the boxes turn a different color on hover*/
-
-.breadcrumb a:hover {
-  background-color: blue;
-}
-.breadcrumb a:hover::before {
-  border-color: blue;
-  border-left-color: transparent;
-}
-.breadcrumb a:hover::after {
-  border-left-color: blue;
-}
-
-/* not sure what this section does */
-
-.breadcrumb li a::before {
-  left: -10px;
-  border-left-color: transparent;
 }

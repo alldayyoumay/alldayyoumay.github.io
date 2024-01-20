@@ -3,74 +3,89 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css">
-    <title>Montyanna</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Document</title>
   </head>
+
   <body>
-    <ul class="breadcrumb">
-      <li>
-        <a href="#">Art</a>
-      </li>
-      <li>
-        <a href="#">Music</a>
-      </li>
-      <li>
-        <a href="#">Food</a>
-      </li>
-      <li>
-        <a href="#">Soul</a>
-      </li>
-    </ul>
-    <h1>The world keeps on spining so look up to sky and smile, my friend.</h1>
-    <img class="container"
-      src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"
-    />
-    <p>
-      I have been feeling pretty good lately and it's because things are
-      alright. Even when they look dark, there's always some light.
-    </p>
-    <h2>So what's holding you down, my friend?</h2>
-    <p>
-      Remember that there are nice people out there that are willing to help
-      you, but only if you're willing to help yourself.
-    </p>
-    <h2>Here are some positives, my friend.</h2>
+    <!-- BREADCRUMB CONTENT -->
+    <div>
+      <ul class="breadcrumb">
+        <li>
+          <a href="#">li-breadcrumb1</a>
+        </li>
+        <li>
+          <a href="#">li-breadcrumb2</a>
+        </li>
+        <li>
+          <a href="#">li-breadcrumb3</a>
+        </li>
+      </ul>
+    </div>
+
+    <br />
+
+    <h1>This is header1.</h1>
+    <h2>This is header2</h2>
+
+    <!-- BUTTON CONTENT -->
+
+    <button>Standard Button</button>
+    <button class="skeuomorphic">Skeuomorphic</button>
+    <button class="flat">Flat</button>
+
+    <br />
+
+    <!-- TABLE CONTENT -->
+
     <table>
       <thead>
-        <th>Past</th>
-        <th>Present</th>
-        <th>Future</th>
+        <tr>
+          <!-- Corrected the <th> placement -->
+          <th>Table header1</th>
+          <th>Table header2</th>
+          <th>Table header3</th>
+        </tr>
       </thead>
       <tbody>
         <tr>
-          <td><span>Lessons learned!</span></td>
-          <td>You're alive!</td>
-          <td>There are opportunities waiting for you!</td>
+          <td><span>Table header 1 row 1</span></td>
+          <td>Table header 2 row 1</td>
+          <td>Table header 3 row 1</td>
         </tr>
         <tr>
-          <td><span>Memories made!</span></td>
-          <td>You are experiencing things!</td>
-          <td>The memories to be made!</td>
+          <td><span>Table header 1 row 2</span></td>
+          <td>Table header 2 row 2</td>
+          <td>Table header 3 row 2</td>
         </tr>
       </tbody>
     </table>
-  </tbody>
-</table>
-<p>
-  <a href="https://www.codecademy.com" title="Codecademy is an online learning platform">Codecademy</a> is the best place to learn to code!
-</p>
-<button>
-  Standard Button
-</button>
-<button class=" skeuomorphic">
-  Skeuomorphic
-</button>
-<button class=" flat">
-  Flat
-</button>
-<div class='wrapper'>
-  <div class='midground'>
-    <div class='foreground'></div>
-  </div>
+
+    <br />
+
+    <!-- IMAGE AND LINKS -->
+
+    <img
+      class="gif"
+      src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif"
+      alt="Happy Ice Cream"
+    />
+
+    <p>
+      <a
+        href="https://www.codecademy.com"
+        title="Codecademy is an online learning platform"
+        >Codecademy</a
+      >
+      this is how you add a link through HTML.
+    </p>
+
+    <!-- USING CONTAINERS "BOXES" TO STYLE -->
+
+    <div class="wrapper">
+      <div class="midground">
+        <div class="foreground"></div>
+      </div>
+    </div>
   </body>
 </html>
